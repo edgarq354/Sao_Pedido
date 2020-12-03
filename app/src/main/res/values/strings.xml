@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Traigo</string>
+    <string name="app_name">Sao</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -14,8 +14,8 @@
     <string name="title_activity_principal">Principal</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Cliente Traigo</string>
-    <string name="nav_header_subtitle">cliente@traigo.com</string>
+    <string name="nav_header_title">Cliente Sao</string>
+    <string name="nav_header_subtitle">cliente@Sao.com</string>
     <string name="nav_header_desc">Navigation header</string>
 
     <string name="menu_home">Home</string>
@@ -28,8 +28,8 @@
     <string name="home_second">Home Second</string>
 
 
-    <string name="servidor_web">http://34.122.193.176/taxivalle/</string>
-    <string name="servidor">http://34.122.193.176/taxivalle2/</string>
+    <string name="servidor_web">http://34.122.193.176/sao/</string>
+    <string name="servidor">http://34.122.193.176/sao2/</string>
 
     <string name="GPSAlertDialogTitle">Locatización</string>
     <string name="GPSAlertDialogMessage">El servicio de Localización esta desabilitado</string>
@@ -131,10 +131,10 @@ El permiso de ubicación es necesario para mostrar su ubicación actual, ¿le gu
     <string name="title_activity_confirmar_sms_celular">Confirmar codigo</string>
     <string name="mensaje_registro">Al dar clic en <b>Siguiente</b> se estará registrado en nuestra base de datos y aceptando los términos y condiciones de uso.</string>
     <string name="finalizo">finalizo</string>
-    <string name="detalle1">Ya sea que hayas olvidado una llave en casa o necesites alguna otra cosa, tu solo pide Yo lo TraiGo, TraiGo te da facilidad de pedir cualquier cosa que necesites son necesidad de moverte. Elige cuando pedir y donde recibir el pedido.</string>
-    <string name="detalle2">¿Necesitas generar más ganancias aparte de tu trabajo regular? En TraiGo, como Socio Conductor, tienes la libertad y flexibilidad para conducir cuando quieras. Así, nunca te perderás los momentos importantes de tu vida.</string>
+    <string name="detalle1">Ya sea que hayas olvidado una llave en casa o necesites alguna otra cosa, tu solo pide Yo lo Sao, Sao te da facilidad de pedir cualquier cosa que necesites son necesidad de moverte. Elige cuando pedir y donde recibir el pedido.</string>
+    <string name="detalle2">¿Necesitas generar más ganancias aparte de tu trabajo regular? En Sao, como Socio Conductor, tienes la libertad y flexibilidad para conducir cuando quieras. Así, nunca te perderás los momentos importantes de tu vida.</string>
     <string name="detalle3">Entrenamos a nuestros conductores adecuadamente y hacemos una revisión (incluyendo quejas y reclamos) para asegurarnos de que solo aquellos que tengan las mejores habilidades hagan parte de nuestro equipo.</string>
-    <string name="informacion">TraiGo es la aplicación de pedidos más descargada. La aplicación conecta a los clientes y conductores, permitiéndoles experimentar una nueva experiencia. TraiGo está disponible para dispositivos Android</string>
+    <string name="informacion">Sao es la aplicación de pedidos más descargada. La aplicación conecta a los clientes y conductores, permitiéndoles experimentar una nueva experiencia. Sao está disponible para dispositivos Android</string>
     <string name="title_activity_lugar_empresa">Lugar_empresa</string>
     <string name="large_text"> </string>
     <string name="title_activity_pagina">Pagina</string>
@@ -241,7 +241,7 @@ El permiso de ubicación es necesario para mostrar su ubicación actual, ¿le gu
        Notificación
     </string>
     <string name="title_activity_principal_pedido">Principal_pedido</string>
-    <string name="title_activity_que_necesitas">Tu pide lo que sea yo lo Traigo</string>
+    <string name="title_activity_que_necesitas">Tu pide lo que sea yo lo Sao</string>
 
 
     <string name="hola_que_necesitas">Hola ¿Que necesitas?</string>
