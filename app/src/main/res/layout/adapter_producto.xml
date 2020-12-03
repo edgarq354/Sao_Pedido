@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardMaxElevation="4dp"
+        app:cardElevation="2dp"
+        android:layout_margin="10dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:foreground="?android:attr/selectableItemBackground"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5sp"
+
+            >
+            <ImageView
+                android:id="@+id/im_logo"
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:src="@drawable/background_producto"
+                 />
+
+            <TextView
+                android:id="@+id/tv_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/elementMargin"
+                android:text="Nombre"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:fontFamily="@font/sultan_nahia"
+                  />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Precio 0 bs"
+                android:textAlignment="center"
+                android:id="@+id/tv_precio"
+                android:fontFamily="@font/grota_rounded_extra_bold"
+                />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

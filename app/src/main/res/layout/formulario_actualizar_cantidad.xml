@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10sp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:id="@+id/im_direccion_imagen"
+            android:layout_margin="5sp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/tv_nombre"
+            android:text="Nombre"
+            android:textSize="20sp"
+            android:textColor="@color/primary_text"
+            android:fontFamily="@font/sultan_nahia"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/tv_descripcion"
+            android:text="Descripcion"
+            android:textColor="@color/primary_text"
+            android:fontFamily="@font/titillium"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_precio"
+            android:text="Bs. 0,00"
+            android:layout_gravity="center"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:background="@drawable/bk_abierto"
+            android:textColor="@color/colorTextoBoton"
+            android:gravity="center"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15sp"
+            android:background="@color/cardview_shadow_end_color"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_menos"
+                style="@style/submit_negativo"
+                android:id="@+id/bt_menos"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/primary_text"
+                android:layout_marginRight="15sp"
+                android:layout_marginLeft="15sp"
+                android:textSize="20sp"
+                android:id="@+id/tv_cantidad"
+
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_mas"
+                style="@style/submit_positivo"
+                android:id="@+id/bt_mas"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Bs. 0,00"
+                android:textColor="@color/primary_text"
+                android:textSize="20sp"
+                android:id="@+id/tv_total"
+                android:layout_weight="1"
+                />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15sp"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:text="Eliminar"
+                style="@style/submit_negativo"
+                android:paddingRight="10sp"
+                android:paddingLeft="10sp"
+                android:id="@+id/bt_eliminar"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:text="Aplicar"
+                style="@style/submit_positivo"
+                android:paddingRight="10sp"
+                android:paddingLeft="10sp"
+                android:id="@+id/bt_agregar"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

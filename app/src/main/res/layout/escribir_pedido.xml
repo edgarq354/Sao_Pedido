@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dirección de Entrega"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="@font/renos_rough"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorTextoBoton"
+        android:padding="10sp"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="5sp"
+        android:paddingRight="5sp"
+        android:paddingLeft="5sp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="120sp"
+            android:text=""
+            android:hint="Indica la dirección de entrega para ayudar al conductor a ubicarse"
+            android:id="@+id/et_referencia"
+            android:inputType="text|textMultiLine"
+            android:gravity="top"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total 80.00 Bs"
+            android:fontFamily="@font/sultan_nahia"
+            android:textSize="26sp"
+            android:gravity="center"
+            android:id="@+id/tv_total"
+            />
+
+
+        <RadioGroup
+            android:id="@+id/rdgGrupo"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/rb_efectivo"
+            >
+
+            <RadioButton
+                android:id="@+id/rb_efectivo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Efectivo"/>
+            <RadioButton
+                android:enabled="false"
+                android:id="@+id/rb_tarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Tarjeta"/>
+
+
+
+
+        </RadioGroup>
+
+
+
+
+    </LinearLayout>
+
+<!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Con cuanto vas a pagar?"
+        android:fontFamily="@font/sultan_nahia"
+        android:textSize="18sp"
+        android:gravity="center"
+        />
+
+   <EditText
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:hint="100 Bs"/> -->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancelar"
+            android:textAllCaps="false"
+            style="@style/submit_negativo"
+            android:id="@+id/bt_cancelar"
+            android:layout_margin="7sp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:text="Confirmar"
+            style="@style/submit_positivo"
+            android:id="@+id/bt_pedir"
+            android:layout_margin="7sp"
+            />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Pedir por WhatsApp"
+        style="@style/submit_positivo"
+        android:id="@+id/bt_pedir_whatsapp"
+        android:layout_margin="7sp"
+        />
+
+
+</LinearLayout>

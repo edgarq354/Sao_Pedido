@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10sp"
+     >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sultan_nahia"
+        android:textSize="20sp"
+        android:text="Ya tienes un pedido en proceso en otra tienda. ¿Deseas eliminar o continuar con el pedido de la tienda anterior?"
+        android:textColor="@color/colorIcons"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_eliminar_pedido"
+                style="@style/submit_negativo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:text="Eliminar Pedido"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_ver_pedido"
+                style="@style/submit_positivo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:text="Ir a Productos"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

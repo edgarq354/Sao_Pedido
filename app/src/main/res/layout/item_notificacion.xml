@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5sp"
+    >
+    <LinearLayout
+        android:id="@+id/box_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:orientation="vertical"
+        android:padding="5sp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/titulo"
+    android:text="TITULO"
+    android:textColor="#000"
+    android:textSize="20sp"
+    android:gravity="center"
+    android:layout_weight="1"
+    />    <ImageView
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:background="@drawable/bk_circulo"
+        android:id="@+id/leido"
+        />
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mensaje"
+        android:text="MENSAJE"
+        android:textColor="#000"
+        android:textSize="15sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fecha"
+            android:text="FECHA"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hora"
+            android:text="HORA"
+            android:gravity="right"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

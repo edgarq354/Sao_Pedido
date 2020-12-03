@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.elisoft.sao_pedido">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
+
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".loquesea.Buscar_repartidor"
+            android:label="@string/title_activity_buscar_repartidor"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".loquesea.Marcar_direccion_cliente"
+            android:label="@string/title_activity_marcar_drieccion_cliente"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".loquesea.Marcar_direccion_lugar"
+            android:label="@string/title_activity_marcar_direccion_lugar"
+            android:theme="@style/AppTheme.NoActionBarOscuro" />
+        <activity
+            android:name=".loquesea.Principal_lo_que_sea"
+            android:label="@string/title_activity_principal_lo_que_sea"
+            android:theme="@style/AppTheme.NoActionBarOscuro" />
+        <activity
+            android:name=".loquesea.QueNecesitas"
+            android:label="@string/title_activity_que_necesitas"
+            android:theme="@style/AppTheme.NoActionBarOscuro" />
+        <activity
+            android:name=".Pedido_usuario"
+            android:label="MI PEDIDO"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Notificacion_pedido_cancelo"
+            android:label="@string/title_activity_notificacion_pedido_cancelo" />
+        <activity android:name=".Notificacion_mensaje" />
+        <activity
+            android:name=".Principal_pedido"
+            android:label="@string/title_activity_principal_pedido"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".producto.ProductoPrincipal"
+            android:label="@string/title_activity_producto_principal"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBarOscuro" />
+        <activity
+            android:name=".carrito.Detalle_carrito"
+            android:label="@string/title_activity_detalle_carrito"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBarOscuro" />
+        <activity
+            android:name=".Inicio_Activity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Principal"
+            android:label="@string/app_name"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBarDrawer" />
+        <activity
+            android:name=".producto.Productos"
+            android:label="@string/title_activity_productos"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBarOscuro" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/id_AdMob_aplicacion" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <service android:name=".notificaciones.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".notificaciones.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".informacion.Informacion"
+            android:label="Información"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".registro_inicio_sesion.Registrar_nombre_completo"
+            android:label="Registrar Usuario"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBarOscuro" />
+        <activity
+            android:name=".registro_inicio_sesion.Completar_registro"
+            android:label="Completar registro"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBarOscuro" />
+        <activity
+            android:name=".registro_inicio_sesion.Iniciar_sesion"
+            android:label="Elige otra cuenta "
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".registro_inicio_sesion.Autenticar_celular"
+            android:label="Verifica tu número"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".registro_inicio_sesion.Confirmar_sms"
+            android:label="Confirmar Codigo"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mi_perfil.Confirmar_sms_celular"
+            android:label="@string/title_activity_confirmar_sms_celular"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mi_perfil.Actualizar_celular"
+            android:label="@string/title_activity_actualizar_celular"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".informacion.Pagina"
+            android:label="@string/title_activity_pagina"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBarOscuro" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".Pedido_finalizado_sin_notificacion"
+            android:label="@string/title_activity_pedido_finalizado_sin_notificacion"
+            android:theme="@style/AppTheme.NoActionBarOscuro" />
+
+        <service
+            android:name=".chat.Servicio_reproducir"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".servicio.Servicio_cargar_punto_google"
+            android:enabled="true"
+            android:exported="true" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/id_AdMob_aplicacion" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <service
+            android:name=".Servicio_pedido"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".chat.Servicio_chat"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".Cancelar_pedido_usuario"
+            android:label="Cancelar el pedido" />
+        <activity android:name=".Pedido_finalizado" />
+
+        <service
+            android:name=".Servicio_pedir_movil"
+            android:enabled="true"
+            android:exported="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".chat.Chat_pedido"
+            android:label="@string/title_activity_chat"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBarOscuro" />
+        <activity
+            android:name=".chat.Chat"
+            android:label="@string/title_activity_chat"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBarOscuro" />
+
+        <service
+            android:name=".chat.Servicio_mensaje_recibido"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".chat.Servicio_guardar_mensaje_enviado"
+            android:exported="false" />
+
+        <activity
+            android:name=".mi_perfil.Perfil_pasajero"
+            android:label="@string/title_activity_perfil_pasajero"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBarOscuro"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".viajes.Viajes"
+            android:label="@string/title_activity_viajes"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBarOscuro" />
+        <activity
+            android:name=".carreras.Carrera"
+            android:label="@string/title_activity_carrera"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBarOscuro" />
+        <activity
+            android:name=".Pedido_perfil_taxi"
+            android:label="Perfil del Conductor"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".historial_notificacion.Notificacion"
+            android:label="Notificación"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBarOscuro" />
+        <activity
+            android:name=".Detalle_pedido_delivery"
+            android:label="@string/title_activity_detalle_pedido_delivery"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBarOscuro" />
+
+        <service
+            android:name=".Servicio_descargar_imagen_perfil"
+            android:enabled="true"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

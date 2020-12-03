@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorTransparente_2"
+    tools:context=".Notificacion_pedido_cancelo"
+    tools:showIn="@layout/activity_notificacion_pedido_cancelo">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/alert_light_frame"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical"
+
+
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pedido cancelado"
+                android:id="@+id/tv_mensaje"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:paddingTop="5sp"
+                android:textColor="@color/colorPrimary_text"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp"
+                android:paddingBottom="30sp"
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="OK"
+                android:id="@+id/bt_aceptar"
+                style="@style/submit2"
+                android:padding="0sp"
+                android:layout_margin="0sp"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

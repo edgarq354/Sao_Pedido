@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Detalle_pedido_delivery"
+    tools:showIn="@layout/activity_detalle_pedido_delivery">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5sp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:src="@drawable/ic_launcher_round"
+                app:civ_border_color="@color/colorPrimary"
+                android:id="@+id/im_perfil"
+                app:civ_border_width="1dp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <LinearLayout
+                android:id="@+id/box_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:orientation="vertical"
+                android:padding="15sp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Nombre del pasajero"
+                    android:textColor="@color/colorPrimary_text"
+                    android:id="@+id/tv_nombre"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Nit:"
+                    android:textStyle="italic"
+                    android:id="@+id/tv_nit"
+                    android:textColor="@color/colorPrimary_text"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Estado: "
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimary_text"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Pendiente"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:id="@+id/tv_estado"
+                        />
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Fecha"
+                    android:textColor="@color/colorPrimary_text"
+                    android:id="@+id/tv_fecha"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Que necesitas?"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary_text"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="---"
+            android:textStyle="italic"
+            android:id="@+id/tv_que_necesitas"
+            android:textColor="@color/colorPrimary_text"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Direccion:"
+            android:textStyle="italic"
+            android:id="@+id/tv_direccion"
+            android:textColor="@color/colorPrimary_text"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Total de carrito:"
+            android:textStyle="bold"
+            android:id="@+id/tv_monto_carrito"
+            android:textColor="@color/colorPrimary_text"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Monto del envio:"
+            android:textStyle="bold"
+            android:id="@+id/tv_monto_envio"
+            android:textColor="@color/colorPrimary_text"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Total:"
+            android:textStyle="bold"
+            android:id="@+id/tv_monto_total"
+            android:textColor="@color/colorPrimary_text"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CARRITO"
+        android:textColor="@color/colorIcons"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60sp"
+        android:id="@+id/lista"
+        android:layout_weight="1"
+
+        >
+
+    </ListView>
+</LinearLayout>

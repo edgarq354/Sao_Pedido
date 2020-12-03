@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cancelar_pedido_usuario"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Cancelar_pedido_usuario">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15sp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Porqué esta cancelando el Pedido?"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginBottom="15sp"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_uno"
+                android:checked="true"
+                android:text="El listado esta mal."
+                />
+
+            <RadioButton
+                android:id="@+id/rb_dos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="El traigo esta muy lejos." />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_tres"
+                android:text="El traigo se demoró mucho."
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_cuatro"
+                android:text="El negocio que solicite no fue el correcto."
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_cinco"
+                android:text="El traigo se detuvo en otra dirección."
+                />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rb_otro"
+                    android:text="Otro"
+                    android:layout_marginRight="5sp"
+                    />
+
+
+
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/et_otro"
+            android:hint="Ninguno"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Confirmar"
+        android:id="@+id/bt_cancelar"
+        android:layout_gravity="bottom"
+        android:layout_margin="7sp"
+        style="@style/submit_positivo"
+        />
+</FrameLayout>

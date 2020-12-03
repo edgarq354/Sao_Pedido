@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_marcar_drieccion_cliente">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/map_custom_marker"
+        android:layout_width="30pt"
+        android:layout_height="30pt"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_punto"
+        android:layout_marginBottom="13pt"
+        android:visibility="visible"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:background="@drawable/cardview"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sultan_nahia"
+                android:text="Dirección"
+                android:textColor="@color/colorNegativoDark"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_direccion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="Dirección del lugar de recoger"
+            android:inputType="textPersonName|textMultiLine"
+            android:minLines="2"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="false"
+            android:importantForAutofill="no" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/tv_direccion"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center|bottom"
+        style="@style/submit_positivo"
+        android:id="@+id/ll_agregar"
+        android:layout_margin="15sp"
+        android:padding="5sp"
+        >
+
+
+
+        <TextView
+            android:text="MARCAR"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center|center"
+            android:textColor="@color/colorTextoBoton"
+            android:id="@+id/tv_titulo_direccion"
+            android:textSize="30sp"
+            />
+    </LinearLayout>
+
+</FrameLayout>
+

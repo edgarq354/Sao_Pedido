@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_pedido_finalizado_sin_notificacion">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MENSAJE"
+        android:id="@+id/tv_mensaje"
+        android:paddingTop="5sp"
+        android:textColor="@color/primary_text"
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp"
+        android:paddingBottom="30sp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:layout_gravity="center"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/bt_aceptar"
+        style="@style/submit_positivo"
+        android:padding="0sp"
+        android:layout_margin="15sp"
+        android:layout_gravity="bottom"
+        />
+
+
+
+</FrameLayout>

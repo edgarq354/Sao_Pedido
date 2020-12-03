@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_menu_usuario"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pedido_finalizado"
+    android:background="@color/colorTextoBoton"
+   >
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:id="@+id/bt_aceptar"
+        android:textAllCaps="false"
+        style="@style/submit_positivo"
+        android:padding="0sp"
+        android:layout_gravity="bottom"
+        android:layout_margin="15sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SERVICIO FINALIZADO"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                android:padding="15sp"
+                android:textColor="@color/colorTextoBoton"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:text="Distancia 12 Km."
+                android:id="@+id/tv_distancia"
+                android:textStyle="bold"
+                android:textColor="@color/primary_text"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp"
+                android:visibility="invisible"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/primary_text"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp"
+                android:layout_marginTop="5sp"
+                android:id="@+id/tv_detalle"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bs. 0 "
+                android:id="@+id/tv_mensaje"
+                android:textStyle="bold"
+                android:textColor="@color/primary_text"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp"
+                android:layout_marginBottom="5sp"
+                android:textSize="50sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ESCRIBE ALGUNA SUGERENCIA:"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/primary_text"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:text=""
+                android:hint="Escribe alguna sugerencia"
+                android:textColor="@color/primary_text"
+                android:id="@+id/et_descripcion"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Califica al mensajero"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/primary_text"
+
+                />
+            <RatingBar
+                android:id="@+id/rb_conductor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:numStars="5"
+                android:stepSize="1"
+                android:layout_gravity="center"
+                android:rating="0"
+                android:theme="@style/RatingBar"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Califica al negocio"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="15sp"
+                android:textColor="@color/primary_text"
+
+                />
+            <RatingBar
+                android:id="@+id/rb_vehiculo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:numStars="5"
+                android:stepSize="1"
+                android:rating="0"
+                android:theme="@style/RatingBar"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

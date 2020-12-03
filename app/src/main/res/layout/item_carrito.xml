@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15sp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="2dp"
+            android:elevation="0dp">
+
+
+            <ImageView
+                android:id="@+id/im_logo"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:src="@mipmap/ic_launcher"
+
+                />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="5sp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:id="@+id/tv_nombre"
+                    android:layout_width="126dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="false"
+                    android:text="Nombre"
+                    android:fontFamily="@font/sultan_nahia"
+                    android:textSize="18sp"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30sp"
+                    android:id="@+id/tv_precio"
+                    android:text="Bs. 0,00"
+                    android:paddingLeft="15sp"
+                    android:paddingRight="15sp"
+                    android:background="@drawable/bk_abierto"
+                    android:textColor="@color/colorTextoBoton"
+                    android:gravity="center"
+                    android:layout_marginTop="5sp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_descripcion"
+                android:text="Descripción"
+                android:layout_weight="1"
+                android:paddingRight="5sp"
+
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

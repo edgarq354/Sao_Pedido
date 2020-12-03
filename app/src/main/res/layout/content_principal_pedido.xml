@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_principal_pedido">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <fragment
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical|bottom"
+        android:id="@+id/ll_pedido"
+        android:background="@color/colorFondoBajito"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5sp"
+                android:layout_marginBottom="0sp"
+                android:id="@+id/bt_ver_perfil"
+
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    android:src="@drawable/ic_perfil_negro"
+                    app:civ_border_color="@color/colorPrimary"
+                    android:id="@+id/im_perfil"
+                    app:civ_border_width="0dp">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="15sp"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/tv_monto_carrito"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:text="Carrito: 0 Bs"
+                        android:textColor="@color/colorIcons" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Envio: 0 Bs"
+                            android:id="@+id/tv_monto_envio"
+                            android:paddingLeft="5sp"
+                            android:textColor="@color/colorIcons"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        >
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Total: 0 Bs"
+                            android:textStyle="bold"
+                            android:id="@+id/tv_monto_total"
+                            android:paddingLeft="5sp"
+                            android:textColor="@color/colorPrimary_text"
+                            />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/ll_vehiculo"
+                        >
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    android:src="@drawable/ic_launcher_round"
+                    app:civ_border_color="@color/colorPrimary"
+                    android:id="@+id/im_vehiculo"
+                    app:civ_border_width="0dp">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15sp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:text="NOMBRE DEL CONDUCTOR"
+                    android:id="@+id/tv_nombre"
+                    android:textColor="@color/colorIcons"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:background="@mipmap/ic_start"
+                        />
+                    <TextView
+                        android:id="@+id/rb_conductor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorIcons"
+                        android:gravity="right|center"
+                        android:text="1"
+                        android:layout_marginRight="5sp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_cantidad_pedidos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorIcons"
+                        android:gravity="right|center"
+                        android:text="(1)"
+                        android:layout_marginRight="15sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:textColor="@color/colorIcons"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="UCM2104"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorIcons"
+                        android:gravity="right"
+                        android:layout_marginRight="15sp"
+                        android:id="@+id/tv_numero_movil"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ll_cancelar"
+
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Cancelar"
+                android:textAllCaps="false"
+                android:id="@+id/bt_cancelar"
+                style="@style/submit_negativo"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="#00000000"
+        app:elevation="0dp"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:background="#00000000"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        android:layout_marginTop="100sp"
+        ads:adUnitId="@string/banner_ad_unit_id"/>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right|center"
+        android:layout_marginRight="15sp"
+        >
+
+
+        <ImageButton
+            android:id="@+id/bt_delivery"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:background="@mipmap/ic_delivery"
+            />
+
+        <ImageButton
+            android:id="@+id/bt_chat"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5sp"
+            android:background="@mipmap/ic_whatsapp_negro"
+            />
+    </LinearLayout>
+</FrameLayout>

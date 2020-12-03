@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_registrar_nombre"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".registro_inicio_sesion.Completar_registro">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="245dp"
+            android:layout_gravity="top"
+            android:background="@drawable/ic_fondo_menu" />
+
+        <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="15sp"
+           android:text="@string/mensaje_registro"
+           android:textColor="@color/primary_text"
+           />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:background="@color/colorPrimary" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/condiciones"
+            android:gravity="bottom|center"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/tv_condiciones"
+            android:padding="20sp"
+            android:onClick="terminos"
+            tools:ignore="OnClick" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Siguiente"
+            android:id="@+id/siguiente"
+            style="@style/submit_positivo"
+            android:layout_gravity="bottom"
+            android:layout_margin="7sp"
+            />
+    </LinearLayout>
+
+
+</FrameLayout>

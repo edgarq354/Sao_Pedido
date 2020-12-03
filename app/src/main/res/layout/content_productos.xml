@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_productos"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp">
+
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:background="@drawable/bk_search"
+            android:queryHint="Buscar productos. . ."
+            android:iconifiedByDefault="false"
+            android:id="@+id/sv_buscar"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            android:layoutAnimation="@anim/layout_animation"/>
+
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/elementMargin"
+            android:numColumns="2"
+            android:verticalSpacing="@dimen/elementMargin" >
+
+        </GridView>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/submit_positivo"
+        android:layout_gravity="bottom"
+        android:padding="5sp"
+        android:id="@+id/ll_pedir_ahora"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0x"
+            android:padding="5sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/titillium"
+            android:textColor="@color/colorTextoBoton"
+            android:id="@+id/tv_cantidad"
+            />
+        <TextView
+            android:layout_width="2sp"
+            android:padding="5sp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Pedido"
+            android:gravity="center"
+            android:fontFamily="@font/titillium"
+            android:padding="5sp"
+            android:textSize="20sp"
+            android:textColor="@color/colorTextoBoton"
+
+
+            />
+
+
+    </LinearLayout>
+
+</FrameLayout>

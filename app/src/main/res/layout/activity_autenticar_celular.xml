@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:ignore="LockedOrientationActivity"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal|bottom"
+        >
+
+
+    <Button
+        android:text="Continuar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:id="@+id/continuar"
+        android:layout_margin="7sp"
+        style="@style/submit_positivo"
+         />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:text="Te enviaremos un SMS para verificar tu número de teléfono. Introduce tu número de teléfono."
+            android:textColor="@color/primary_text"
+            android:layout_margin="10sp"
+            android:textSize="20sp"
+             />
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10sp"
+
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_bolivia"
+                    android:layout_marginTop="5sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="+591 "
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    />
+
+                <EditText
+                    android:id="@+id/celular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_marginTop="3sp"
+                    android:maxLength="8"
+                    android:hint="Numero de telf."
+                    android:inputType="phone"
+                    android:textColor="@color/primary_text"
+                    android:textSize="20sp"
+                  />
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/derecha"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:layout_gravity="right"
+        >
+
+    <TextView
+        android:id="@+id/fecha"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha"
+        android:textStyle="bold"
+        android:textColor="#000" />
+    <TextView
+        android:id="@+id/msgr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+
+        android:text="Sample"
+        android:textColor="#000" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        >
+        <ImageView
+            android:layout_width="15sp"
+            android:layout_height="15sp"
+            android:background="@mipmap/ic_enviado"
+            android:id="@+id/im_enviado"
+            />
+        <ImageView
+            android:layout_width="15sp"
+            android:layout_height="15sp"
+            android:background="@mipmap/ic_leido"
+            android:id="@+id/im_leido"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

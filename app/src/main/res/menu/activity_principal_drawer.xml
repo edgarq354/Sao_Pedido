@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/it_perfil"
+            android:icon="@mipmap/ic_perfil"
+            android:title="@string/menu_perfil" />
+
+        <item
+            android:id="@+id/it_notificaciones"
+            android:icon="@mipmap/ic_notificacion"
+            android:title="@string/menu_notificaciones"/>
+        <item
+            android:id="@+id/it_historial"
+            android:icon="@mipmap/ic_historial"
+            android:title="@string/menu_historial"/>
+        <item
+            android:id="@+id/it_compartir"
+            android:icon="@mipmap/ic_compartir"
+            android:title="@string/menu_compartir"/>
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow"
+            android:visible="false"/>
+    </group>
+
+    <item android:title="@string/menu_nuevo_negocio">
+        <menu>
+            <item
+                android:id="@+id/it_registrar_negocio"
+                android:icon="@mipmap/ic_usuario_mas"
+                android:title="@string/menu_registrate" />
+
+        </menu>
+    </item>
+
+
+
+
+</menu>

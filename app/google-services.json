@@ -1,0 +1,119 @@
+{
+  "project_info": {
+    "project_number": "849809861709",
+    "firebase_url": "https://sao-app-7a72b.firebaseio.com",
+    "project_id": "sao-app-7a72b",
+    "storage_bucket": "sao-app-7a72b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849809861709:android:76f0c6f79d2b265b100004",
+        "android_client_info": {
+          "package_name": "com.elisoft.sao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849809861709-7s59kuqneutc5jt8sbbh4tcqefr0ae23.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0MspmEdoZKiKH08rrLyJ9FCADW3HYrYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849809861709-7s59kuqneutc5jt8sbbh4tcqefr0ae23.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "849809861709-i24ahphuqr0ihjfe0hs8t2scb2vhvk46.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.elisoft.sao"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849809861709:android:0f4d3b130a28672f100004",
+        "android_client_info": {
+          "package_name": "com.elisoft.sao_conductor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849809861709-7s59kuqneutc5jt8sbbh4tcqefr0ae23.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0MspmEdoZKiKH08rrLyJ9FCADW3HYrYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849809861709-7s59kuqneutc5jt8sbbh4tcqefr0ae23.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "849809861709-i24ahphuqr0ihjfe0hs8t2scb2vhvk46.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.elisoft.sao"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849809861709:android:7f1b1a8912840e23100004",
+        "android_client_info": {
+          "package_name": "com.elisoft.sao_pedido"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849809861709-7s59kuqneutc5jt8sbbh4tcqefr0ae23.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0MspmEdoZKiKH08rrLyJ9FCADW3HYrYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849809861709-7s59kuqneutc5jt8sbbh4tcqefr0ae23.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "849809861709-i24ahphuqr0ihjfe0hs8t2scb2vhvk46.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.elisoft.sao"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

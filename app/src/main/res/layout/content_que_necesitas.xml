@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    android:background="@color/colorPrimaryDark"
+    android:paddingRight="15sp"
+    android:paddingLeft="15sp"
+    android:paddingTop="20sp"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:background="@drawable/cardview"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Saludo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sultan_nahia"
+                android:text="@string/hola_que_necesitas"
+                android:textColor="@color/colorNegativoDark"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/indicaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:inputType="textPersonName|textMultiLine"
+                android:lines="5"
+                android:minLines="2"
+                android:scrollbars="vertical"
+                android:scrollHorizontally="false"
+                android:text="@string/si_cabe_en_la_caja_de_la_moto_lo_podemos_llevar"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_que_necesitas"
+            android:layout_width="fill_parent"
+            android:layout_height="122dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="@string/escribe_aqui_lo_que_necesitas"
+            android:inputType="textPersonName|textMultiLine"
+            android:lines="20"
+            android:minLines="5"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="false"
+            android:importantForAutofill="no" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_siguiente"
+        style="@style/submit_positivo"
+        android:layout_width="234dp"
+        android:layout_height="47dp"
+        android:layout_margin="30sp"
+        android:layout_marginTop="28dp"
+        android:onClick="Siguiente"
+        android:text="@string/siguiente_lqs"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/tv_horario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sultan_nahia"
+        android:text="Disponible de  07:00 - 23:00 Hrs"
+        android:textColor="@color/colorTextoBoton"
+        android:textSize="24sp"
+        tools:ignore="MissingConstraints"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/bt_siguiente"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="0sp"
+    android:layout_margin="0sp"
+    >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_margin="5sp"
+        android:padding="0sp"
+        android:id="@+id/im_mapa"
+        tools:ignore="Suspicious0dp" />
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="350sp"
+        android:layout_margin="5sp"
+        android:padding="0sp"
+        android:id="@+id/wv_mapa"
+        tools:ignore="WebViewLayout">
+    </WebView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll_ver_datos"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="0sp"
+            android:paddingBottom="8sp"
+            >
+
+
+        <TextView
+            android:id="@+id/tv_numero"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_weight="0"
+            android:padding="5sp"
+            android:text="0"
+
+            android:textColor="@color/colorPrimary"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Fecha"
+            android:id="@+id/fecha"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:textColor="@color/colorPrimary_text"
+            />
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:background="@mipmap/ic_perfil"
+            android:id="@+id/ib_conductor"
+            />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Distancia"
+                android:id="@+id/tv_distancia"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimary_text"
+                />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Monto"
+            android:id="@+id/monto"
+            android:gravity="right|center"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary_text"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center|bottom"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:padding="5sp"
+            android:layout_marginBottom="5sp"
+            android:id="@+id/ll_ubicacion_inicial"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_punto_inicio_1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UBICACIÓN INICIAL"
+                android:layout_weight="1"
+                android:id="@+id/tv_direccion_inicio"
+                android:layout_margin="5sp"
+                android:textColor="@color/colorPrimary_text"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:padding="5sp"
+            android:layout_marginBottom="5sp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_punto_fin_1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UBICACIÓN FINAL"
+                android:layout_weight="1"
+                android:id="@+id/tv_direccion_fin"
+                android:textColor="@color/colorPrimary_text"
+                />
+        </LinearLayout>
+     </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+</FrameLayout>

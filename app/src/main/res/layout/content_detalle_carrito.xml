@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_detalle_carrito">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/ic_fondo_menu"
+                android:orientation="vertical"
+                android:id="@+id/ll_direccion_banner_lugar"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="140dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/cardview"
+                android:elevation="10dp"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Nombre del Negocio"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_nombre_lugar"
+                    />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageView
+
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center_vertical"
+                                android:foregroundGravity="left"
+                                android:layout_marginLeft="20sp"
+                                android:padding="2sp"
+                                app:srcCompat="@drawable/motito" />
+
+                            <TextView
+                                android:id="@+id/tv_monto_envio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="10sp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/sultan_nahia"
+                                android:text="10.00 Bs" />
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="1sp"
+                            android:layout_height="match_parent"
+                            android:background="#757575"
+                            />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+
+
+                            <TextView
+                                android:id="@+id/tv_tiempo_preparacion"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="10sp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:fontFamily="@font/sultan_nahia"
+                                android:textSize="18sp"
+                                android:text="10-20 min" />
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center_vertical"
+
+                                android:layout_marginRight="20sp"
+                                android:padding="2sp"
+                                app:srcCompat="@drawable/cronometrito" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lista"
+            android:layout_weight="1"
+
+            >
+
+        </ListView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/bt_cancelar"
+                style="@style/submit_negativo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Eliminar"
+                android:layout_margin="7sp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_confirmar"
+                style="@style/submit_positivo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:layout_margin="7sp"
+                android:text="Confirmar"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

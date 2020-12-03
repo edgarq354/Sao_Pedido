@@ -1,0 +1,69 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/az_audiotape_regular</item>
+    </style>
+
+    <style name="Error" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">#ff0d00</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="submit_positivo">
+        <item name="android:background">@drawable/bk_confirmar</item>
+        <item name="android:textColor">@color/colorTextoBoton</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_marginLeft">5sp</item>
+        <item name="android:layout_marginRight">5sp</item>
+        <item name="android:layout_marginBottom">5sp</item>
+        <item name="android:fontFamily">@font/titillium</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="submit_negativo">
+        <item name="android:background">@drawable/bk_cancelar</item>
+        <item name="android:textColor">@color/colorTextoBoton</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_marginLeft">5sp</item>
+        <item name="android:layout_marginRight">5sp</item>
+        <item name="android:layout_marginBottom">5sp</item>
+        <item name="android:fontFamily">@font/titillium</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="submit2">
+        <item name="android:background">@drawable/bk_boton</item>
+        <item name="android:textColor">@color/colorTextoBoton</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_marginLeft">5sp</item>
+        <item name="android:layout_marginRight">5sp</item>
+        <item name="android:layout_marginBottom">5sp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBarDrawer">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+
+    </style>
+</resources>
