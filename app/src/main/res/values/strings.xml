@@ -1,35 +1,20 @@
 <resources>
+
+
     <string name="app_name">Sao Pedido</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-
-    <string name="otra_cuenta">Conectate por <b>Facebook</b> o <b>Google+</b></string>
-    <string name="title_activity_principal">Principal</string>
+    <string name="app_nombre">Sao Pedidos </string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Cliente Sao</string>
-    <string name="nav_header_subtitle">cliente@Sao.com</string>
-    <string name="nav_header_desc">Navigation header</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="sql_pedido">Carrito</string>
-    <string name="sql_loquesea">loquesea</string>
-    <string name="sql_ubicacion">ubicacion</string>
-    <string name="mis_datos">mis_datos</string>
-    <string name="home_second">Home Second</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_menu_movil">Menu_movil</string>
+    <string name="title_activity_registrar_usuario">Registrar_usuario</string>
 
 
-    <string name="servidor_web">http://34.122.193.176/sao/</string>
-    <string name="servidor">http://34.122.193.176/sao2/</string>
+    <string name="title_activity_historial_pedido">Map</string>
+    <string name="title_activity_notificacion_pedido_movil">Map</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_pedido_usuario">Map</string>
 
     <string name="GPSAlertDialogTitle">Locatización</string>
     <string name="GPSAlertDialogMessage">El servicio de Localización esta desabilitado</string>
@@ -37,40 +22,13 @@
     <string name="location_desc">
 El permiso de ubicación es necesario para mostrar su ubicación actual, ¿le gustaría reconsiderar?</string>
 
-    <string name="facebook_app_id">156017668575823</string>
-    <string name="fb_login_protocol_scheme">fb156017668575823</string>
 
-    <string name="olvidate"><u>Olvidaste mi contraseña</u></string>
-    <string name="condiciones"><u>Terminos y Condiciones de uso</u></string>
-    <string name="whatsapp">+59163544083</string>
-    <string name="version_sql">17</string>
-    <string name="nombre_sql">pedido</string>
-    <string name="title_activity_productos">Productos</string>
-    <string name="title_activity_detalle_carrito">Detalle Carrito</string>
-    <string name="title_activity_producto_principal">Producto Principal</string>
-    <string name="nombre">Nombre</string>
-    <string name="menu_nuevo_negocio">Nuevo Negocio</string>
-    <string name="menu_registrate">Registrate</string>
-    <string name="menu_notificaciones">Notificaciones</string>
-    <string name="menu_historial">Historial</string>
-    <string name="menu_compartir">Compartir</string>
-    <string name="menu_perfil">Perfil</string>
-
-
-    <string name="title_activity_menu_movil">Menu_movil</string>
-    <string name="title_activity_registrar_usuario">Registrar_usuario</string>
-
-    <string name="latitud_vallegrande">-18.488317</string>
-    <string name="longitud_vallegrande">-64.105268</string>
-
-    <string name="title_activity_historial_pedido">Map</string>
-    <string name="title_activity_notificacion_pedido_movil">Map</string>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="title_activity_pedido_usuario">Map</string>
 
 
     <string name="title_activity_otra_direccion">Otra_direccion</string>
-    <string name="url_pagina">https://www.facebook.com/GougoPassenger/</string>
+    <string name="olvidate"><u>Olvidaste mi contraseña</u></string>
+    <string name="condiciones"><u>Terminos y Condiciones de uso</u></string>
+    <string name="otra_cuenta">Conectate por <b>Facebook</b> o <b>Google+</b></string>
     <string name="title_activity_historial">Historial</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_activity_notificacion_pedido_cancelo">Notificacion_pedido_cancelo</string>
@@ -110,31 +68,85 @@ El permiso de ubicación es necesario para mostrar su ubicación actual, ¿le gu
     <string name="title_activity_calcular__tarifa">Calcular tarifa</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_detalle_reserva">Mi reserva</string>
-    <string name="title_activity_tarifa">Tarifa</string>
-    <string name="title_activity_registrar_usuario_facebook">Registrate en Taxi GouGo</string>
+    <string name="title_activity_tarifa">Tarifa aproximada</string>
+    <string name="title_activity_registrar_usuario_facebook">Registrate ahora</string>
+    <string name="title_activity_carrera_casual">SAO METER</string>
+    <string name="title_activity_buscar_direccion">Buscar dirección</string>
 
-    <string name="taxi_normal">TAXI NORMAL</string>
-    <string name="taxi_lujo">SOLICITAR TAXI</string>
+    <string name="title_activity_chat">Chat</string>
+    <string name="taxi_normal">MOVIL NORMAL</string>
+    <string name="taxi_empresa">MOVIL SAO</string>
+    <string name="taxi_lujo">NORMAL</string>
     <string name="taxi_con_aire">TAXI CON AIRE</string>
-    <string name="taxi_con_maletero">TAXI VAGONETA</string>
-    <string name="taxi_delivery">DELIVERY</string>
+    <string name="taxi_con_maletero">VAGONETA</string>
     <string name="taxi_con_parrilla">CON PARRILLA</string>
-    <string name="taxi_camioneta">CAMIONETA</string>
+    <string name="taxi_viru">AEROPUERTO</string>
+    <string name="taxi_expreso">EXPRESO</string>
+    <string name="taxi_hora">POR HORA</string>
     <string name="moto">MOTO TAXI-ENCARGO</string>
 
-    <string name="nombre_carpeta">GouGo Passenger</string>
-    <string name="telefono">75602869</string>
-    <string name="correo">edgarq354@gmail.com</string>
-    <string name="direccion">Barrio Municipal calle 12 entre avenida #3.(Montero-Santa Cruz)</string>
+
+    <string name="whatsapp">+59160949401</string>
+    <string name="telefono">33557070</string>
+    <string name="direccion_casa">direccion_casa</string>
+    <string name="direccion_trabajo">direccion_trabajo</string>
+    <string name="version_sql">1</string>
+    <string name="nombre_sql">sao_pedido</string>
+    <string name="nombre_carpeta">SAO PEDIDO</string>
+    <string name="correo">hfls100@msn.com</string>
+    <string name="pagina">http://radiomovilsao.com</string>
+    <string name="facebook">https://www.facebook.com/RadioMovilSao</string>
+    <string name="direccion">Zona La Colorada Calle Taquirari #4060</string>
     <string name="title_activity_opcion_inicio_sesion">Opcion_inicio_sesion</string>
     <string name="title_activity_actualizar_celular">Actualizar # de celular</string>
     <string name="title_activity_confirmar_sms_celular">Confirmar codigo</string>
-    <string name="mensaje_registro">Al dar clic en <b>Siguiente</b> se estará registrado en nuestra base de datos y aceptando los términos y condiciones de uso.</string>
+    <string name="mensaje_registro">Al dar clic en <b>SIGUIENTE</b> se estará registrado en nuestra base de datos y aceptando los términos y condiciones de uso.</string>
+    <string name="mis_datos">mis_datos</string>
     <string name="finalizo">finalizo</string>
-    <string name="detalle1">Ya sea que hayas olvidado una llave en casa o necesites alguna otra cosa, tu solo pide Yo lo Sao, Sao te da facilidad de pedir cualquier cosa que necesites son necesidad de moverte. Elige cuando pedir y donde recibir el pedido.</string>
-    <string name="detalle2">¿Necesitas generar más ganancias aparte de tu trabajo regular? En Sao, como Socio Conductor, tienes la libertad y flexibilidad para conducir cuando quieras. Así, nunca te perderás los momentos importantes de tu vida.</string>
-    <string name="detalle3">Entrenamos a nuestros conductores adecuadamente y hacemos una revisión (incluyendo quejas y reclamos) para asegurarnos de que solo aquellos que tengan las mejores habilidades hagan parte de nuestro equipo.</string>
-    <string name="informacion">Sao es la aplicación de pedidos más descargada. La aplicación conecta a los clientes y conductores, permitiéndoles experimentar una nueva experiencia. Sao está disponible para dispositivos Android</string>
+    <string name="detalle1"> Barrio San Lorenzo Calle Taquirari #4060 Zona La Colorada</string>
+    <string name="detalle2">Ser reconocidos como la empresa de taxi que brinda el mejor servicio por la calidad, puntualidad y seguridad; y por las unidades con el mejor estado de conservación. Ofreciendo: Amplia experiencia y conocimientos de las necesidades de los usuarios. Atención personalizada</string>
+    <string name="detalle3">Ofrecer un servicio de taxi a través de una central telefónica con un Call Center Experimentado brindando calidad, puntualidad y seguridad a nuestros clientes satisfaciendo su necesidades de traslado, y estando de la mano con la implementacion de las nuevas tecnologias</string>
+    <string name="informacion"></string>
+    <string name="title_activity_buscar_direccion_inicio">¿A DÓNDE VAS?</string>
+    <string name="title_activity_calcular_tarifa_confirmar">Calcular tarifa</string>
+
+    <string name="title_activity_iniciar_sesion">Iniciar_sesion</string>
+
+    <string name="distancia">18000</string>
+    <string name="distancia_tarifador">59000</string>
+    <string name="title_activity_total_casual">Total al finalizar</string>
+    <string name="title_activity_viajes">Viajes</string>
+
+
+    <string-array name="mes">
+        <item>Todo</item>
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Mayo</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+
+
+
+
+
+    <string name="latitud">-17.783109</string>
+    <string name="longitud">-63.180678</string>
+
+    <string name="servidor_web">http://34.122.193.176/sao/</string>
+    <string name="servidor">http://34.122.193.176/sao2/</string>
+    <string name="facebook_app_id">156017668575823</string>
+    <string name="fb_login_protocol_scheme">fb156017668575823</string>
+
+    <string name="taxi_delivery">DELIVERY</string>
+    <string name="taxi_camioneta">CAMIONETA</string>
+
     <string name="title_activity_lugar_empresa">Lugar_empresa</string>
     <string name="large_text"> </string>
     <string name="title_activity_pagina">Pagina</string>
@@ -142,11 +154,10 @@ El permiso de ubicación es necesario para mostrar su ubicación actual, ¿le gu
     <string name="title_activity_compartir_amigo">Compartir</string>
     <string name="title_activity_foto_producto">Foto_producto</string>
     <string name="title_activity_lista__productos">Lista_Productos</string>
-    <string name="informacion_compartir">Comparte a tus amigos para probar GouGo. Obtendrás bonos en tu billetera para que puedas usar en tus proximas carreras.</string>
+    <string name="informacion_compartir">Comparte a tus amigos para probar Sao. Obtendrás bonos en tu billetera para que puedas usar en tus proximas carreras.</string>
 
 
     <string name="google_key_api">AIzaSyB1h4N5nfpkF1Hg30P88c_1MvH9qG9Tcvs</string>
-    <string name="title_activity_chat">Chat</string>
     <string name="title_activity_actualizar_celular_2">Actualizar celular</string>
     <string name="title_activity_menu_desaparecidos">Desaparecidos</string>
     <string name="title_activity_perfil_desaparecido">Perfil del desaparecido</string>
@@ -161,6 +172,8 @@ El permiso de ubicación es necesario para mostrar su ubicación actual, ¿le gu
     <string name="title_activity_lugar_pedido">Empresa</string>
 
 
+    <string name="sql_pedido">Carrito</string>
+    <string name="sql_ubicacion">ubicacion</string>
     <string name="title_activity_delivery_pendiente">Delivery Pendiente</string>
     <string name="title_activity_menu_lugar">Mi Negocio</string>
     <string name="title_activity_delivery_en_proceso">Delivery en proceso</string>
@@ -169,7 +182,7 @@ El permiso de ubicación es necesario para mostrar su ubicación actual, ¿le gu
     <string name="title_activity_productos_lugar">Productos</string>
     <string name="title_activity_delivery_completado">Delivery completado</string>
     <string name="title_activity_detalle_pedido_proceso">Lista de Carrito</string>
-    <string name="title_activity_detalle_pedido_delivery">Detalle de Pedido</string>
+    <string name="title_activity_detalle_pedido_delivery">Empresa</string>
     <string name="title_activity_detalle_delivery_historial">Detalle</string>
     <string name="title_activity_detalle_delivery_historial_administrador">
        Detalle
@@ -216,22 +229,9 @@ El permiso de ubicación es necesario para mostrar su ubicación actual, ¿le gu
     <string name="title_activity_foto_soat">Foto de SOAT</string>
     <string name="title_activity_menu_datos_conductor">CONDUCTOR</string>
     <string name="title_activity_menu_datos_vehiculo">VEHICULO</string>
-    <string name="title_activity_viajes">Viajes</string>
 
 
-    <string-array name="mes">
-        <item>Todo</item>
-        <item>Enero</item>
-        <item>Febrero</item>
-        <item>Marzo</item>
-        <item>Abril</item>
-        <item>Mayo</item>
-        <item>Junio</item>
-        <item>Julio</item>
-        <item>Agosto</item>
-        <item>Noviembre</item>
-        <item>Diciembre</item>
-    </string-array>
+
     <string name="title_activity_perfil_editar">Perfil_editar</string>
     <string name="text_name_notification">Notificación</string>
     <string name="title_activity_carrera">Carrera</string>
@@ -240,6 +240,48 @@ El permiso de ubicación es necesario para mostrar su ubicación actual, ¿le gu
     <string name="title_activity_pedido_finalizado_sin_notificacion">
        Notificación
     </string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="title_activity_principal">Principal</string>
+    <string name="nav_header_title">Cliente Sao</string>
+    <string name="nav_header_subtitle">cliente@Sao.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="sql_loquesea">loquesea</string>
+    <string name="home_second">Home Second</string>
+
+
+    <string name="title_activity_productos">Productos</string>
+    <string name="title_activity_detalle_carrito">Detalle Carrito</string>
+    <string name="title_activity_producto_principal">Producto Principal</string>
+    <string name="nombre">Nombre</string>
+    <string name="menu_nuevo_negocio">Nuevo Negocio</string>
+    <string name="menu_registrate">Registrate</string>
+    <string name="menu_notificaciones">Notificaciones</string>
+    <string name="menu_historial">Historial</string>
+    <string name="menu_compartir">Compartir</string>
+    <string name="menu_perfil">Perfil</string>
+
+
+
+    <string name="latitud_vallegrande">-18.488317</string>
+    <string name="longitud_vallegrande">-64.105268</string>
+
+
+
+    <string name="url_pagina">https://www.facebook.com/GougoPassenger/</string>
+
+
     <string name="title_activity_principal_pedido">Principal_pedido</string>
     <string name="title_activity_que_necesitas">Tu pide lo que sea yo lo Sao</string>
 

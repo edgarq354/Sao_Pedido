@@ -31,6 +31,7 @@ import android.view.animation.LayoutAnimationController;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
+import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -133,6 +134,7 @@ public class Principal extends AppCompatActivity implements
     int sw_obtener_ubicacion_primera=0;
 
     Button bt_lo_que_deseas;
+    ImageButton ib_lo_que_deseas;
 
     int id_categoria_general=0;
 
@@ -185,8 +187,16 @@ public class Principal extends AppCompatActivity implements
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         bt_lo_que_deseas=findViewById(R.id.bt_lo_que_deseas);
+        ib_lo_que_deseas=findViewById(R.id.ib_lo_que_deseas);
 
         bt_lo_que_deseas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Principal.this, QueNecesitas.class));
+            }
+        });
+
+        ib_lo_que_deseas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Principal.this, QueNecesitas.class));
@@ -347,7 +357,7 @@ public class Principal extends AppCompatActivity implements
 
         PackageManager packageManager = getPackageManager();
         Intent i = new Intent(Intent.ACTION_VIEW);
-        String mensaje="He probado "+getString(R.string.app_name)+" una app para pedir comida sin moverte y sin complicaciones, prueba ahora tu tambien y vive la experiencia traigo.  https://play.google.com/store/apps/details?id=com.elisoft.traigo&hl=es";
+        String mensaje="He probado "+getString(R.string.app_name)+" una app para pedir comida sin moverte y sin complicaciones, prueba ahora tu tambien y vive la experiencia traigo.  https://play.google.com/store/apps/details?id=com.elisoft.sao_pedido";
         try {
             String url = "https://wa.me/?text=" + URLEncoder.encode(mensaje, "UTF-8");
             i.setPackage("com.whatsapp");
@@ -1388,7 +1398,7 @@ public class Principal extends AppCompatActivity implements
             JSONObject jsonParam= new JSONObject();
             jsonParam.put("id_usuario", String.valueOf(id_usuario));
             jsonParam.put("token", token);
-            String url=getString(R.string.servidor) + "traigo/frm_version.php?opcion=traigo";
+            String url=getString(R.string.servidor) + "traigo/frm_version.php?opcion=sao_pedido";
             if (queue == null) {
                 queue = Volley.newRequestQueue(this);
                 Log.e("volley","Setting a new request queue");
@@ -1489,7 +1499,7 @@ public class Principal extends AppCompatActivity implements
                 dialogo1.setCancelable(false);
                 dialogo1.setPositiveButton("ACTUALIZAR", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialogo1, int id) {
-                        Uri uri = Uri.parse("https://play.google.com/store/apps/details?id=com.elisoft.traigo&hl=es");
+                        Uri uri = Uri.parse("https://play.google.com/store/apps/details?id=com.elisoft.sao_pedido");
                         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                         startActivity(intent);
                     }

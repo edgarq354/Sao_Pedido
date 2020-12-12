@@ -49,6 +49,7 @@
         android:paddingRight="5sp"
         android:paddingLeft="5sp"
         android:layout_gravity="bottom|center"
+        android:visibility="invisible"
         />
 
 </FrameLayout>

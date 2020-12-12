@@ -40,7 +40,9 @@
             android:visible="false"/>
     </group>
 
-    <item android:title="@string/menu_nuevo_negocio">
+    <item android:title="@string/menu_nuevo_negocio"
+        android:visible="false"
+        >
         <menu>
             <item
                 android:id="@+id/it_registrar_negocio"

@@ -130,7 +130,7 @@ public class Completar_registro extends AppCompatActivity implements View.OnClic
                             if (ActivityCompat.checkSelfPermission(Completar_registro.this, Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
                                 verificar_permiso_imei();
                             }else {
-                                imei = telephonyManager.getDeviceId();
+                                imei = "";
 
                                 servicio_registrar_usuario_autenticar(nombre, apellido, celular, email, contasenia, token, codigo,imei);
                             }
@@ -294,19 +294,9 @@ public class Completar_registro extends AppCompatActivity implements View.OnClic
         if(usuario.getString("id_usuario","").equals("")==false  && usuario.getString("id_usuario","").equals("null")==false) {
 
 
-            AlertDialog.Builder dialogo1 = new AlertDialog.Builder(this);
-            dialogo1.setTitle(getString(R.string.app_name));
-            dialogo1.setMessage("Muchas gracias por registrate en "+ Html.fromHtml("<b>"+getString(R.string.app_name)+"</b>")+".\n" +
-                    "Ahora podés pedir comida desde tu celular y tu pedido llegara donde tu estes.\nSin " +
-                    "llamadas, sin moverte.");
-            dialogo1.setCancelable(false);
-            dialogo1.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialogo1, int id) {
-                    saltar_principal();
-                }
-            });
 
-            dialogo1.show();
+                    saltar_principal();
+
 
 
         }

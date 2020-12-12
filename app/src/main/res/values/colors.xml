@@ -1,56 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="colorPrimary">#FF36C44B</color>
-    <color name="colorPrimaryDark">#388E3C</color>
-    <color name="primary_light">#C8E6C9</color>
-    <color name="colorAccent">#8BC34A</color>
+    <color name="colorAccent_presion">#1b255e</color>
+    <color name="colorPrimary">#333333</color>
+    <color name="colorPrimaryDark">#1b5e20</color>
+    <color name="colorPrimary_light">#c5cbe4</color>
+    <color name="colorPrimary_light_bajito">#f4f5f9</color>
+    <color name="colorAccent">#3B8141</color>
+    <color name="colorPrimary_text">#212121</color>
+    <color name="colorSecondary_text">#757575</color>
+    <color name="colorIcons">#212121</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="colorTransparente_1">#01c40f</color>
+    <color name="colorTransparente_3">#ff5252</color>
+    <color name="colorTransparente_2">#d5000000</color>
+    <color name="colorTransparente_4">#f1000000</color>
+    <color name="colorTextoBoton">#fff</color>
+    <color name="colorazul">#3577b5</color>
+    <color name="colorPedido">#e96c4d</color>
+    <color name="colorLujo">#4d91e9</color>
+    <color name="colorMaletero">#5c70d4</color>
+    <color name="colorViru">#ca206f</color>
+    <color name="colorExpreso">#0096d1</color>
+    <color name="colorParrilla">#6fab59</color>
+    <color name="colorAire">#65e2ed</color>
+    <color name="color_secundario">#ee8600</color>
+
     <color name="primary_text">#212121</color>
     <color name="secondary_text">#757575</color>
     <color name="icons">#FFFFFF</color>
-    <color name="colorIcons">#000000</color>
     <color name="divider">#BDBDBD</color>
 
+    <color name="colorChat">#C0EEC1</color>
+    <color name="colorChatOscuro">#A0D3A1</color>
 
     <color name="colorCirculo_negativo">#000000</color>
-
-    <color name="colorNegativoDark">#000000</color>
-    <color name="colorNegativo">#333333</color>
-
-
-    <color name="colorPrimary_text">#212121</color>
-    <color name="colorDivider">#BDBDBD</color>
-    <color name="colorTransparente_1">#89005dfd</color>
-    <color name="colorTransparente_3">#b8004805</color>
-    <color name="colorTransparente_2">#d5000000</color>
-    <color name="colorTransparente_4">#f1000000</color>
     <color name="colorFondoBajito">#F1F1F1</color>
-    <color name="colorazul">#3577b5</color>
-    <color name="colorPedido">#fc5353</color>
     <color name="colorReserva">#009cdf</color>
     <color name="color_celeste">#009cdf</color>
     <color name="color_rojo">#ff606b</color>
-    <color name="color_secundario">#ee8600</color>
-
-    <color name="colorChatDerecha">#DAF1FF</color>
-    <color name="colorChatDerechaOscuro">#A2DDFF</color>
 
 
 
 
 
-
-
-    <color name="colorTextoBoton">#fff</color>
-    <color name="colorSecondary_text">#757575</color>
+    <color name="colorChatDerecha">#55C0FF</color>
+    <color name="colorChatDerechaOscuro">#2CAEFB</color>
 
     <color name="overlay">#80000000</color>
     <color name="textColor">#ffffff</color>
-
 
     <color name="colorGrayLight">#fafafa</color>
     <color name="colorStarBlue">#09c6df</color>
     <color name="colorEndBlue">#0bcce6</color>
 
+    <color name="colorNegativo">#333333</color>
+
     <color name="typing">#FF36C44B</color>
+
+
+    <color name="primary_light">#C8E6C9</color>
+
+    <color name="colorNegativoDark">#000000</color>
 </resources>
