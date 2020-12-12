@@ -123,7 +123,7 @@ public class ProductoPrincipal extends AppCompatActivity implements View.OnClick
         switch (v.getId())
         {
             case R.id.bt_mas:
-                if(cantidad<10)
+                if(cantidad<50)
                 {
                     cantidad++;
                 }

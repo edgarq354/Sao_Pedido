@@ -536,7 +536,7 @@ public class Detalle_carrito extends AppCompatActivity implements View.OnClickLi
         bt_mas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(cantidad[0] <10)
+                if(cantidad[0] <50)
                 {
                     cantidad[0]++;
                 }

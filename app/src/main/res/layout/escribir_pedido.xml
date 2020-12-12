@@ -63,6 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checkedButton="@+id/rb_efectivo"
+            android:visibility="invisible"
             >
 
             <RadioButton
@@ -142,6 +143,7 @@
         style="@style/submit_positivo"
         android:id="@+id/bt_pedir_whatsapp"
         android:layout_margin="7sp"
+        android:visibility="invisible"
         />
 
 
