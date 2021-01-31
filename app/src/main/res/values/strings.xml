@@ -1,8 +1,8 @@
 <resources>
 
 
-    <string name="app_name">Sao Pedido</string>
-    <string name="app_nombre">Sao Pedidos </string>
+    <string name="app_name">Serere</string>
+    <string name="app_nombre">Serere </string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
@@ -91,8 +91,8 @@ El permiso de ubicación es necesario para mostrar su ubicación actual, ¿le gu
     <string name="direccion_casa">direccion_casa</string>
     <string name="direccion_trabajo">direccion_trabajo</string>
     <string name="version_sql">1</string>
-    <string name="nombre_sql">sao_pedido</string>
-    <string name="nombre_carpeta">SAO PEDIDO</string>
+    <string name="nombre_sql">serere</string>
+    <string name="nombre_carpeta">SERERE</string>
     <string name="correo">hfls100@msn.com</string>
     <string name="pagina">http://radiomovilsao.com</string>
     <string name="facebook">https://www.facebook.com/RadioMovilSao</string>
@@ -139,8 +139,8 @@ El permiso de ubicación es necesario para mostrar su ubicación actual, ¿le gu
     <string name="latitud">-17.783109</string>
     <string name="longitud">-63.180678</string>
 
-    <string name="servidor_web">http://34.122.193.176/sao/</string>
-    <string name="servidor">http://34.122.193.176/sao2/</string>
+    <string name="servidor_web">http://34.67.185.232/master/</string>
+    <string name="servidor">http://34.67.185.232/master2/</string>
     <string name="facebook_app_id">156017668575823</string>
     <string name="fb_login_protocol_scheme">fb156017668575823</string>
 
@@ -250,7 +250,7 @@ El permiso de ubicación es necesario para mostrar su ubicación actual, ¿le gu
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
     <string name="title_activity_principal">Principal</string>
-    <string name="nav_header_title">Cliente Sao</string>
+    <string name="nav_header_title">Cliente Serere</string>
     <string name="nav_header_subtitle">cliente@Sao.com</string>
     <string name="nav_header_desc">Navigation header</string>
 
@@ -283,7 +283,7 @@ El permiso de ubicación es necesario para mostrar su ubicación actual, ¿le gu
 
 
     <string name="title_activity_principal_pedido">Principal_pedido</string>
-    <string name="title_activity_que_necesitas">Tu pide lo que sea yo lo Sao</string>
+    <string name="title_activity_que_necesitas">Tu pide lo que sea</string>
 
 
     <string name="hola_que_necesitas">Hola ¿Que necesitas?</string>
